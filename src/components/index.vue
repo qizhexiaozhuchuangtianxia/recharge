@@ -67,9 +67,6 @@
         <img @click="isRuleShow = true" src="../../static/rule_icon.png" />
       </div>
       <div class="home-banner">
-      <!-- <img class="home-banner" src="../../static/re_banner.png" /> -->
-
-      </div>
       <div class="receive-btn" @click="isShow = true">
         <span class="receive-txt">立即领取</span>
         <img class="receive-btn-icon" src="../../static/btn_icon.png" />
@@ -81,6 +78,8 @@
           placeholder="营销代码：非必填项"
         />
         <img src="../../static/case_icon.png" />
+      </div>
+
       </div>
     </div>
   </div>
@@ -112,6 +111,7 @@ export default {
 height:100%;
 }
 .header {
+  position: fixed;
   width: 100%;
   height: 1rem;
   line-height: 1rem;
@@ -169,7 +169,7 @@ height:100%;
 
 .home-cont {
   position: relative;
-  top:0;
+  top:1rem;
   width: 100%;
   height: calc(100% - 1rem);
   .cont-top {
@@ -186,7 +186,7 @@ height:100%;
     }
   }
   .home-banner {
-    position: absolute;
+    position: relative;
     top: 0;
     width: 7.5rem;
     background: url(../../static/re_banner.png) no-repeat;
@@ -195,7 +195,7 @@ height:100%;
   }
   .receive-btn {
     position: absolute;
-    top: 6.5rem;
+    bottom: 4.3rem;
     left: 2.3rem;
     width: 2.84rem;
     height: 0.82rem;
@@ -218,8 +218,8 @@ height:100%;
     }
   }
   .cont-input-cont {
-    position: relative;
-    top: 9rem;
+    position: absolute;
+    bottom: 1rem;
     left: 1rem;
     width: 2.84rem;
     height: 0.82rem;
